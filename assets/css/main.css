@@ -1,112 +1,179 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../opt/boxen/data/rvm/gems/ruby-1.9.2-p290/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../opt/boxen/data/rvm/gems/ruby-1.9.2-p290/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../opt/boxen/data/rvm/gems/ruby-1.9.2-p290/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../opt/boxen/data/rvm/gems/ruby-1.9.2-p290/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../opt/boxen/data/rvm/gems/ruby-1.9.2-p290/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../opt/boxen/data/rvm/gems/ruby-1.9.2-p290/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../opt/boxen/data/rvm/gems/ruby-1.9.2-p290/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../opt/boxen/data/rvm/gems/ruby-1.9.2-p290/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../opt/boxen/data/rvm/gems/ruby-1.9.2-p290/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 88, social-icons/*.png */
+.social-icons-sprite {
+  background-image: url('/assets/images/social-icons-s6d1e076f69.png');
+  background-repeat: no-repeat;
+}
+
 /************************
  HERO CSS
 ************************/
-svg {
-  position: relative;
-  top: -279px;
-  left: 0px;
-}
-
-.clock-hide {
-  display: none;
-}
-
+/* line 16, scss/main.scss */
 .hero {
-  background: red;
   background: url(../images/linen.png);
   color: #FFF;
   text-align: center;
   padding-top: 35px;
   width: 100%;
   height: 770px;
-
-	h1 {
-		font-family: 'Junction', Verdana;
-    font-size: 5.9em;
-    font-weight: 400;
-    margin-top: 20px;
-    margin-bottom: 25px;
-    color: #eee;
-    padding-top: 30px;
-    text-shadow: -2px -2px 0 #000;
-	}
-  
-	a {
-		color: #faf2c1;
-		font-size: 1.1em;
-		text-decoration: none;
-	}
-
-	a:hover {
-		text-decoration: underline;
-	}
-
-  time {
-    display: block;
-  }
-
-	.henry-img {
-    margin-top: 20px;
-		width: 215px; /* 250px*/
-    margin-bottom: 20px;
-    opacity: 0.6;
-	}
-
-  .clock {
-    height: 0;
-  }
-
-  .empty {
-    height: 200px;
-    width: 200px;
-    display: block;
-    margin: -250px auto 0 auto;
-    position: relative;
-    z-index: 9999;
-    cursor: pointer;
-  }
-
-  .para {
-    margin: 15px auto 15px auto;
-    width: 80%;
-  }
-
-	.social-icons {
-		overflow: hidden;
-		width: 175px;
-		margin: 10px auto 20px auto;
-		padding: 0;
-	}
-
-	.social-icons li {
-		float: left;
-		margin-left: 25px;
-		padding: 0;
-	}
-
-  .email {
-    margin-top: 20px;
-  	padding: 10px 45px;
-  }
-
-	.email:hover {
-    text-decoration: none;
-	}
-
-  .popover {
-    text-align: center;
-  }
-
-  .popover-content {
-    font-size: 0.9em;
-  }
+}
+/* line 24, scss/main.scss */
+.hero h1 {
+  font-family: 'Junction', Verdana;
+  font-size: 5.9em;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  color: #eee;
+  padding-top: 30px;
+  text-shadow: -2px -2px 0 #000;
+}
+/* line 35, scss/main.scss */
+.hero a {
+  color: #faf2c1;
+  font-size: 1.1em;
+  text-decoration: none;
+}
+/* line 41, scss/main.scss */
+.hero a:hover {
+  text-decoration: underline;
+}
+/* line 45, scss/main.scss */
+.hero time {
+  display: block;
+}
+/* line 49, scss/main.scss */
+.hero .henry-img {
+  margin-top: 20px;
+  width: 215px;
+  /* 250px*/
+  margin-bottom: 20px;
+  opacity: 0.6;
+}
+/* line 56, scss/main.scss */
+.hero .clock {
+  height: 0;
+}
+/* line 60, scss/main.scss */
+.hero .empty {
+  height: 200px;
+  width: 200px;
+  display: block;
+  margin: -250px auto 0 auto;
+  position: relative;
+  z-index: 9999;
+  cursor: pointer;
+}
+/* line 70, scss/main.scss */
+.hero .para {
+  margin: 15px auto 15px auto;
+  width: 80%;
+}
+/* line 75, scss/main.scss */
+.hero .social-icons {
+  overflow: hidden;
+  width: 175px;
+  margin: 10px auto 20px auto;
+  padding: 0;
+}
+/* line 82, scss/main.scss */
+.hero .social-icons li {
+  float: left;
+  margin-left: 25px;
+  padding: 0;
+}
+/* line 88, scss/main.scss */
+.hero .email {
+  margin-top: 20px;
+  padding: 10px 45px;
+}
+/* line 93, scss/main.scss */
+.hero .email:hover {
+  text-decoration: none;
+}
+/* line 97, scss/main.scss */
+.hero .popover {
+  text-align: center;
+}
+/* line 101, scss/main.scss */
+.hero .popover-content {
+  font-size: 0.9em;
 }
 
 /************************
  Social Icons CSS
 ************************/
+/* line 109, scss/main.scss */
 .twitter-icon {
-  background: url(../witter.svg);
+  background: url(../icons/twitter.svg);
   display: inline-block;
   background-size: 100%;
   width: 25px;
@@ -114,8 +181,9 @@ svg {
   text-indent: -999em;
 }
 
+/* line 118, scss/main.scss */
 .tumblr-icon {
-  background: url(../witter.svg);
+  background: url(../icons/twitter.svg);
   display: inline-block;
   background-size: 100%;
   width: 25px;
@@ -123,8 +191,9 @@ svg {
   text-indent: -999em;
 }
 
+/* line 127, scss/main.scss */
 .quora-icon {
-  background: url(../uora.svg);
+  background: url(../icons/quora.svg);
   display: inline-block;
   background-size: 100%;
   width: 25px;
@@ -132,8 +201,9 @@ svg {
   text-indent: -999em;
 }
 
+/* line 136, scss/main.scss */
 .facebook-icon {
-  background: url(../acebook.svg);
+  background: url(../icons/facebook.svg);
   display: inline-block;
   background-size: 100%;
   width: 25px;
@@ -141,8 +211,9 @@ svg {
   text-indent: -999em;
 }
 
+/* line 145, scss/main.scss */
 .tumblr-icon {
-  background: url(../umblr.svg);
+  background: url(../icons/tumblr.svg);
   display: inline-block;
   background-size: 100%;
   width: 25px;
@@ -150,6 +221,7 @@ svg {
   text-indent: -999em;
 }
 
+/* line 154, scss/main.scss */
 .github-icon {
   background: url(../icons/github.svg);
   display: inline-block;
@@ -159,6 +231,7 @@ svg {
   text-indent: -999em;
 }
 
+/* line 163, scss/main.scss */
 .linkedin-icon {
   background: url(../icons/linkedin.svg);
   display: inline-block;
@@ -168,17 +241,7 @@ svg {
   text-indent: -999em;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+/* line 183, scss/main.scss */
 .popover {
   color: #333;
   position: absolute;
@@ -198,18 +261,28 @@ svg {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   white-space: normal;
 }
+
+/* line 202, scss/main.scss */
 .popover.top {
   margin-top: -10px;
 }
+
+/* line 205, scss/main.scss */
 .popover.right {
   margin-left: 10px;
 }
+
+/* line 208, scss/main.scss */
 .popover.bottom {
   margin-top: 10px;
 }
+
+/* line 211, scss/main.scss */
 .popover.left {
   margin-left: -10px;
 }
+
+/* line 214, scss/main.scss */
 .popover-title {
   margin: 0;
   text-align: center;
@@ -221,9 +294,13 @@ svg {
   border-bottom: 1px solid #ebebeb;
   border-radius: 5px 5px 0 0;
 }
+
+/* line 225, scss/main.scss */
 .popover-content {
   padding: 9px 14px;
 }
+
+/* line 228, scss/main.scss */
 .popover .arrow,
 .popover .arrow:after {
   position: absolute;
@@ -233,13 +310,19 @@ svg {
   border-color: transparent;
   border-style: solid;
 }
+
+/* line 237, scss/main.scss */
 .popover .arrow {
   border-width: 11px;
 }
+
+/* line 240, scss/main.scss */
 .popover .arrow:after {
   border-width: 10px;
   content: "";
 }
+
+/* line 244, scss/main.scss */
 .popover.top .arrow {
   left: 50%;
   margin-left: -11px;
@@ -248,6 +331,8 @@ svg {
   border-top-color: rgba(0, 0, 0, 0.25);
   bottom: -11px;
 }
+
+/* line 252, scss/main.scss */
 .popover.top .arrow:after {
   content: " ";
   bottom: 1px;
@@ -255,6 +340,8 @@ svg {
   border-bottom-width: 0;
   border-top-color: #ffffff;
 }
+
+/* line 259, scss/main.scss */
 .popover.right .arrow {
   top: 50%;
   left: -11px;
@@ -263,6 +350,8 @@ svg {
   border-right-color: #999999;
   border-right-color: rgba(0, 0, 0, 0.25);
 }
+
+/* line 267, scss/main.scss */
 .popover.right .arrow:after {
   content: " ";
   left: 1px;
@@ -270,6 +359,8 @@ svg {
   border-left-width: 0;
   border-right-color: #ffffff;
 }
+
+/* line 274, scss/main.scss */
 .popover.bottom .arrow {
   left: 50%;
   margin-left: -11px;
@@ -278,6 +369,8 @@ svg {
   border-bottom-color: rgba(0, 0, 0, 0.25);
   top: -11px;
 }
+
+/* line 282, scss/main.scss */
 .popover.bottom .arrow:after {
   content: " ";
   top: 1px;
@@ -285,6 +378,8 @@ svg {
   border-top-width: 0;
   border-bottom-color: #ffffff;
 }
+
+/* line 289, scss/main.scss */
 .popover.left .arrow {
   top: 50%;
   right: -11px;
@@ -293,6 +388,8 @@ svg {
   border-left-color: #999999;
   border-left-color: rgba(0, 0, 0, 0.25);
 }
+
+/* line 297, scss/main.scss */
 .popover.left .arrow:after {
   content: " ";
   right: 1px;
@@ -301,197 +398,140 @@ svg {
   bottom: -10px;
 }
 
-
-
-
-
-
-
-
-
 /** **/
-// TODO: refactor responsive css
-//Applies these styles if width of viewport is 1024 or less
-// @media screen and (max-width: 1024px) { 
-//   ul, li {
-//     background: green;
-//   }
-//   ul .post-date {
-//     color: black;
-//   }
-
-// }
-
-// @media screen and (max-width: 700px) {
-//   ul, li {
-//     background: red;
-//   }
-// }
-
-// @media (min-width: 768px) and (max-width: 979px) {
-//   ul, li {
-//     background: purple;
-//   }
-// }
-
-
 /* Large desktop */
-@media (min-width: 1200px) { 
+@media (min-width: 1200px) {
+  /* line 341, scss/main.scss */
   .home {
     max-width: 1300px;
   }
 
+  /* line 345, scss/main.scss */
   .logo {
     left: 40px;
   }
 }
- 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
+  /* line 352, scss/main.scss */
   .home {
     width: 85%;
   }
 
+  /* line 356, scss/main.scss */
   .posts h2 {
-    font-size:1.3em;
+    font-size: 1.3em;
     line-height: 30px;
   }
 
-  .posts p{
+  /* line 361, scss/main.scss */
+  .posts p {
     line-height: 25px;
     font-size: 1em;
   }
 }
- 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-  .henry-img {
-    // width:10px !important;
-  }
-
+  /* line 373, scss/main.scss */
   .posts h2 {
     font-size: 1.2em;
     line-height: 25px;
   }
 
+  /* line 378, scss/main.scss */
   .posts p {
     font-size: 0.95em;
     line-height: 25px;
   }
 
+  /* line 383, scss/main.scss */
   .home {
     width: 90%;
   }
 }
-
-@media (max-width: 660px) { // custom
-
+@media (max-width: 660px) {
+  /* line 390, scss/main.scss */
   .home {
     width: 92%;
   }
 
+  /* line 394, scss/main.scss */
   .hero {
     height: 725px;
     font-size: 1em;
   }
 
+  /* line 399, scss/main.scss */
   .post-img {
     display: none;
   }
 
+  /* line 403, scss/main.scss */
   .posts h2 {
     text-align: center;
     width: 80%;
     margin: 10px auto 0 auto;
   }
 
+  /* line 409, scss/main.scss */
   .post-date {
     margin-top: 7px;
     text-align: center;
   }
 
+  /* line 414, scss/main.scss */
   .posts p {
-    text-align:center;
+    text-align: center;
   }
 }
- 
 /* Landscape phones and down */
 @media (max-width: 480px) {
-  // HERO
+  /* line 422, scss/main.scss */
   .hero {
     height: 690px;
     padding-top: 30px;
-
-    .para {
-      width: 90%;
-    }
-    .henry-img {
-      margin-top: 10px;
-    }
-    time {
-      font-size: 0.9em;
-    }
+  }
+  /* line 426, scss/main.scss */
+  .hero .para {
+    width: 90%;
+  }
+  /* line 429, scss/main.scss */
+  .hero .henry-img {
+    margin-top: 10px;
+  }
+  /* line 432, scss/main.scss */
+  .hero time {
+    font-size: 0.9em;
   }
 
+  /* line 437, scss/main.scss */
   .post-date {
     text-align: center;
   }
 
-  // POSTS
-  .posts {
-    .post {
-      h2 {
-        font-size: 1em;
-        line-height: 25px;
-        margin-bottom: 0;
-      }
-      p {
-        margin: 0 0 15px 0;
-      }
-
-    }
+  /* line 444, scss/main.scss */
+  .posts .post h2 {
+    font-size: 1em;
+    line-height: 25px;
+    margin-bottom: 0;
   }
-
+  /* line 449, scss/main.scss */
+  .posts .post p {
+    margin: 0 0 15px 0;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* scaffolding */
+/* line 488, scss/main.scss */
 .wrapper {
   width: 100%;
 }
 
-html, body { 
-  height: 100%; 
+/* line 492, scss/main.scss */
+html, body {
+  height: 100%;
 }
 
+/* line 496, scss/main.scss */
 body {
   background-color: #FFF;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
@@ -499,32 +539,38 @@ body {
   color: #333;
 }
 
-
+/* line 504, scss/main.scss */
 li {
   list-style: none;
 }
 
+/* line 508, scss/main.scss */
 .mauto {
   margin: 0 auto;
   display: block;
 }
 
+/* line 513, scss/main.scss */
 .pull-left {
   float: left;
 }
 
+/* line 517, scss/main.scss */
 .clearfix {
   overflow: hidden;
 }
 
+/* line 521, scss/main.scss */
 .text-center {
   text-align: left;
 }
 
+/* line 525, scss/main.scss */
 .mleft0 {
   margin-left: 0 !important;
 }
 
+/* line 529, scss/main.scss */
 .btn {
   display: inline-block;
   *display: inline;
@@ -554,16 +600,17 @@ li {
   border-color: #e6e6e6 #e6e6e6 #bfbfbf;
   border-bottom-color: #b3b3b3;
   -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
   filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
   filter: progid:dximagetransform.microsoft.gradient(enabled=false);
   *zoom: 1;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
+/* line 568, scss/main.scss */
 .btn:hover,
 .btn:active,
 .btn.active,
@@ -573,36 +620,40 @@ li {
   *background-color: #d9d9d9;
 }
 
+/* line 577, scss/main.scss */
 .btn:active,
 .btn.active {
   background-color: #cccccc \9;
 }
 
+/* line 582, scss/main.scss */
 .btn:first-child {
   *margin-left: 0;
 }
 
+/* line 586, scss/main.scss */
 .btn:hover {
   color: #333333;
   text-decoration: none;
   background-color: #e6e6e6;
   *background-color: #d9d9d9;
   /* Buttons in IE7 don't get borders, so darken on hover */
-
   background-position: 0 -15px;
   -webkit-transition: background-position 0.1s linear;
-     -moz-transition: background-position 0.1s linear;
-      -ms-transition: background-position 0.1s linear;
-       -o-transition: background-position 0.1s linear;
-          transition: background-position 0.1s linear;
+  -moz-transition: background-position 0.1s linear;
+  -ms-transition: background-position 0.1s linear;
+  -o-transition: background-position 0.1s linear;
+  transition: background-position 0.1s linear;
 }
 
+/* line 601, scss/main.scss */
 .btn:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 
+/* line 607, scss/main.scss */
 .btn.active,
 .btn:active {
   background-color: #e6e6e6;
@@ -610,10 +661,11 @@ li {
   background-image: none;
   outline: 0;
   -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
-     -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
-          box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
+/* line 618, scss/main.scss */
 .btn.disabled,
 .btn[disabled] {
   cursor: default;
@@ -622,39 +674,44 @@ li {
   opacity: 0.65;
   filter: alpha(opacity=65);
   -webkit-box-shadow: none;
-     -moz-box-shadow: none;
-          box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 
+/* line 630, scss/main.scss */
 .btn-large {
   padding: 9px 14px;
   font-size: 15px;
   line-height: normal;
   -webkit-border-radius: 5px;
-     -moz-border-radius: 5px;
-          border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 
+/* line 639, scss/main.scss */
 .btn-large [class^="icon-"] {
   margin-top: 1px;
 }
 
-
+/* line 644, scss/main.scss */
 .btn-primary,
 .btn-primary:hover {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 
+/* line 650, scss/main.scss */
 .btn-primary.active {
   color: rgba(255, 255, 255, 0.75);
 }
 
+/* line 654, scss/main.scss */
 .btn {
   border-color: #ccc;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
 
+/* line 659, scss/main.scss */
 .btn-primary {
   background-color: #0074cc;
   *background-color: #0055cc;
@@ -671,6 +728,7 @@ li {
   filter: progid:dximagetransform.microsoft.gradient(enabled=false);
 }
 
+/* line 675, scss/main.scss */
 .btn-primary:hover,
 .btn-primary:active,
 .btn-primary.active,
@@ -680,6 +738,7 @@ li {
   *background-color: #004ab3;
 }
 
+/* line 684, scss/main.scss */
 .btn-primary:active,
 .btn-primary.active {
   background-color: #004099 \9;
