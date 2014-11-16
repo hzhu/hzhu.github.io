@@ -85,8 +85,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding: 0;
   box-shadow: 0 0 0 5px #faf2c1, 0 -4px 5px 4px rgba(0, 0, 0, 0.25), 0 1px 2px 0 rgba(0, 0, 0, 0.16);
 }
+@media (max-width: 480px) {
+  /* line 3, scss/_mugshot.scss */
+  .team {
+    width: 190px;
+    height: 190px;
+  }
+}
 
-/* line 16, scss/_mugshot.scss */
+/* line 21, scss/_mugshot.scss */
 .team .photo1 {
   background: url("https://lh3.googleusercontent.com/-Y7BSUSAjY00/Tv6-sh1hnHI/AAAAAAAAARY/6FMQAd2-aWg/w469-h368-no/IMG_0786.JPG");
   -webkit-background-size: cover;
@@ -95,7 +102,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-size: cover;
 }
 
-/* line 22, scss/_mugshot.scss */
+/* line 27, scss/_mugshot.scss */
 .team .photo2 {
   background: url("../../assets/images/pups-hq.png");
   -webkit-background-size: cover;
@@ -104,7 +111,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-size: cover;
 }
 
-/* line 27, scss/_mugshot.scss */
+/* line 32, scss/_mugshot.scss */
 .team .photo3 {
   background: url("../../assets/images/bleep-hq.png");
   -webkit-background-size: cover;
@@ -113,7 +120,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-size: cover;
 }
 
-/* line 33, scss/_mugshot.scss */
+/* line 38, scss/_mugshot.scss */
 .team .photo4 {
   background: url("../../assets/images/glass-hq.png");
   -webkit-background-size: cover;
@@ -122,7 +129,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-size: cover;
 }
 
-/* line 38, scss/_mugshot.scss */
+/* line 43, scss/_mugshot.scss */
 .team .member {
   width: 100%;
   max-width: 230px;
