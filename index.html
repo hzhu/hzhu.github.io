@@ -8,7 +8,7 @@
     <meta name="description" content="Personal site of Henry Zhu">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- /*Uncomment to use Open Sans*/ <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700,600' rel='stylesheet' type='text/css'> -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700,600' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/genericons.css">
@@ -49,6 +49,12 @@
 
 
         if (!isMobile) {
+            d3.select('.team .member')
+              .transition()
+              .duration(500)
+              .style("opacity", 1);
+
+
           $('.team .member').hover(function() {
             d3.select('.team .member')
               .transition()
@@ -87,7 +93,7 @@
     <!-- mugshot -->
     <div class="content-box">
     <div class="team">
-      <div class="member"></div>
+      <div class="member"></div><span>H</span>
     </div>
     </div>
 
