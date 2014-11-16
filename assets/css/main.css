@@ -67,238 +67,148 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+/* Responsive General Sass Mixing function */
+/* line 3, scss/_mugshot.scss */
+.team {
+  margin: 60px auto 25px;
+  /* positioning */
+  background: transparent;
+  display: block;
+  width: 230px;
+  /* width of the circle frame */
+  height: 230px;
+  /* height of the circle frame */
+  border-radius: 50%;
+  /* 50% and up makes a circle */
+  border: 1px solid purple;
+  text-align: center;
+  padding: 0;
+  box-shadow: 0 0 0 5px #faf2c1, 0 -4px 5px 4px rgba(0, 0, 0, 0.25), 0 1px 2px 0 rgba(0, 0, 0, 0.16);
+}
+
+/* line 16, scss/_mugshot.scss */
+.team .photo1 {
+  background: url("https://lh3.googleusercontent.com/-Y7BSUSAjY00/Tv6-sh1hnHI/AAAAAAAAARY/6FMQAd2-aWg/w469-h368-no/IMG_0786.JPG");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 22, scss/_mugshot.scss */
+.team .photo2 {
+  background: url("../../assets/images/pups-hq.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 27, scss/_mugshot.scss */
+.team .photo3 {
+  background: url("../../assets/images/bleep-hq.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 33, scss/_mugshot.scss */
+.team .photo4 {
+  background: url("../../assets/images/glass-hq.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 38, scss/_mugshot.scss */
+.team .member {
+  width: 100%;
+  max-width: 230px;
+  /* width of the interior image */
+  height: 100%;
+  max-height: 230px;
+  /* height of the interior image */
+  border-radius: 50%;
+  /* 50% and up makes a circle */
+  margin: 0 auto;
+  box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, 0.1);
+}
+
 /************************
  HERO CSS
 ************************/
-/* line 13, scss/main.scss */
+/* line 14, scss/main.scss */
 .hero {
   background: url(../images/linen.png);
   color: #FFF;
   text-align: center;
   padding-top: 35px;
   width: 100%;
-  height: 770px;
+  height: 100%;
 }
-/* line 21, scss/main.scss */
+/* line 22, scss/main.scss */
 .hero h1 {
   font-family: 'Junction', Verdana;
   font-size: 5.9em;
   font-weight: 400;
   margin-top: 20px;
   margin-bottom: 25px;
-  color: #eee;
+  color: #EEE;
   padding-top: 30px;
   text-shadow: -2px -2px 0 #000;
 }
-/* line 32, scss/main.scss */
+/* line 33, scss/main.scss */
 .hero a {
   color: #faf2c1;
   font-size: 25px;
   text-decoration: none;
 }
-/* line 38, scss/main.scss */
+/* line 39, scss/main.scss */
 .hero a:hover {
   text-decoration: underline;
 }
-/* line 42, scss/main.scss */
-.hero time {
-  display: block;
-}
-/* line 46, scss/main.scss */
-.hero .henry-img {
-  margin-top: 20px;
-  width: 215px;
-  /* 250px*/
-  margin-bottom: 20px;
-  opacity: 0.6;
-}
-/* line 53, scss/main.scss */
-.hero .clock {
-  height: 0;
-}
-/* line 57, scss/main.scss */
-.hero .empty {
-  height: 200px;
-  width: 200px;
-  display: block;
-  margin: -250px auto 0 auto;
-  position: relative;
-  z-index: 9999;
-  cursor: pointer;
-}
-/* line 67, scss/main.scss */
+/* line 44, scss/main.scss */
 .hero .para {
   margin: 15px auto 15px auto;
   width: 80%;
 }
-/* line 72, scss/main.scss */
+/* line 50, scss/main.scss */
 .hero .social-icons {
   overflow: hidden;
-  width: 300px;
-  margin: 10px auto 20px auto;
+  margin: 10px auto 25px auto;
   padding: 0;
+  width: 280px;
 }
-/* line 79, scss/main.scss */
+/* line 60, scss/main.scss */
 .hero .social-icons li {
   float: left;
   margin-left: 25px;
   padding: 0;
 }
-/* line 85, scss/main.scss */
-.hero .email {
-  margin-top: 20px;
-  padding: 10px 45px;
-}
-/* line 90, scss/main.scss */
-.hero .email:hover {
-  text-decoration: none;
-}
-/* line 94, scss/main.scss */
-.hero .popover {
-  text-align: center;
-}
-/* line 98, scss/main.scss */
-.hero .popover-content {
-  font-size: 0.9em;
-}
 
-/************************
- Social Icons CSS
-************************/
-/** **/
 /* Large desktop */
-@media (min-width: 1200px) {
-  /* line 141, scss/main.scss */
-  .home {
-    max-width: 1300px;
-  }
-
-  /* line 145, scss/main.scss */
-  .logo {
-    left: 40px;
-  }
-}
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) {
-  /* line 152, scss/main.scss */
-  .home {
-    width: 85%;
-  }
-
-  /* line 156, scss/main.scss */
-  .posts h2 {
-    font-size: 1.3em;
-    line-height: 30px;
-  }
-
-  /* line 161, scss/main.scss */
-  .posts p {
-    line-height: 25px;
-    font-size: 1em;
-  }
-}
 /* Landscape phone to portrait tablet */
-@media (max-width: 767px) {
-  /* line 173, scss/main.scss */
-  .posts h2 {
-    font-size: 1.2em;
-    line-height: 25px;
-  }
-
-  /* line 178, scss/main.scss */
-  .posts p {
-    font-size: 0.95em;
-    line-height: 25px;
-  }
-
-  /* line 183, scss/main.scss */
-  .home {
-    width: 90%;
-  }
-}
 @media (max-width: 660px) {
-  /* line 190, scss/main.scss */
-  .home {
-    width: 92%;
-  }
-
-  /* line 194, scss/main.scss */
+  /* line 86, scss/main.scss */
   .hero {
-    height: 725px;
     font-size: 1em;
-  }
-
-  /* line 199, scss/main.scss */
-  .post-img {
-    display: none;
-  }
-
-  /* line 203, scss/main.scss */
-  .posts h2 {
-    text-align: center;
-    width: 80%;
-    margin: 10px auto 0 auto;
-  }
-
-  /* line 209, scss/main.scss */
-  .post-date {
-    margin-top: 7px;
-    text-align: center;
-  }
-
-  /* line 214, scss/main.scss */
-  .posts p {
-    text-align: center;
-  }
-}
-/* Landscape phones and down */
-@media (max-width: 480px) {
-  /* line 222, scss/main.scss */
-  .hero {
-    height: 690px;
-    padding-top: 30px;
-  }
-  /* line 226, scss/main.scss */
-  .hero .para {
-    width: 90%;
-  }
-  /* line 229, scss/main.scss */
-  .hero .henry-img {
-    margin-top: 10px;
-  }
-  /* line 232, scss/main.scss */
-  .hero time {
-    font-size: 0.9em;
-  }
-
-  /* line 237, scss/main.scss */
-  .post-date {
-    text-align: center;
-  }
-
-  /* line 244, scss/main.scss */
-  .posts .post h2 {
-    font-size: 1em;
-    line-height: 25px;
-    margin-bottom: 0;
-  }
-  /* line 249, scss/main.scss */
-  .posts .post p {
-    margin: 0 0 15px 0;
   }
 }
 /* scaffolding */
-/* line 288, scss/main.scss */
+/* line 121, scss/main.scss */
 .wrapper {
   width: 100%;
 }
 
-/* line 292, scss/main.scss */
+/* line 125, scss/main.scss */
 html, body {
   height: 100%;
 }
 
-/* line 296, scss/main.scss */
+/* line 129, scss/main.scss */
 body {
   background-color: #FFF;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
@@ -306,33 +216,33 @@ body {
   color: #333;
 }
 
-/* line 304, scss/main.scss */
+/* line 137, scss/main.scss */
 li {
   list-style: none;
 }
 
-/* line 308, scss/main.scss */
+/* line 141, scss/main.scss */
 .mauto {
   margin: 0 auto;
   display: block;
 }
 
-/* line 313, scss/main.scss */
+/* line 146, scss/main.scss */
 .pull-left {
   float: left;
 }
 
-/* line 317, scss/main.scss */
+/* line 150, scss/main.scss */
 .clearfix {
   overflow: hidden;
 }
 
-/* line 321, scss/main.scss */
+/* line 154, scss/main.scss */
 .text-center {
   text-align: left;
 }
 
-/* line 325, scss/main.scss */
+/* line 158, scss/main.scss */
 .mleft0 {
   margin-left: 0 !important;
 }

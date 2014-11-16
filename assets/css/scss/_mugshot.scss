@@ -1,0 +1,50 @@
+@import "mixins";
+
+.team {
+margin: 60px auto 25px; /* positioning */
+background: transparent;
+display: block;
+width: 230px; /* width of the circle frame */
+height: 230px; /* height of the circle frame */
+border-radius: 50%; /* 50% and up makes a circle */
+border: 1px solid purple;
+text-align: center;
+padding: 0;
+box-shadow: 0 0 0 5px #faf2c1, 0 -4px 5px 4px rgba(0, 0, 0, 0.25), 0 1px 2px 0 rgba(0, 0, 0, 0.16);
+}
+
+.team .photo1 {
+	background: url('https://lh3.googleusercontent.com/-Y7BSUSAjY00/Tv6-sh1hnHI/AAAAAAAAARY/6FMQAd2-aWg/w469-h368-no/IMG_0786.JPG');
+	//background: url('../../assets/images/pups2.png');
+	 @include mugshotStyles;
+}
+
+.team .photo2 {
+	background: url('../../assets/images/pups-hq.png');
+	@include mugshotStyles;
+}
+
+.team .photo3 {
+	background: url('../../assets/images/bleep-hq.png');
+	//background: url('../../assets/images/pups2.png');
+	 @include mugshotStyles;
+}
+
+.team .photo4 {
+	background: url('../../assets/images/glass-hq.png');
+	 @include mugshotStyles;
+}
+
+.team .member {
+width: 100%;
+max-width: 230px; /* width of the interior image */
+height: 100%; 
+max-height: 230px; /* height of the interior image */
+border-radius: 50%;  /* 50% and up makes a circle */
+margin: 0 auto;
+box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+
+

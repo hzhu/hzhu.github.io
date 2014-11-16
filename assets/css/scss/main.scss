@@ -4,7 +4,8 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
-
+@import "mugshot";
+@import "mixins";
 
 /************************
  HERO CSS
@@ -16,7 +17,7 @@
   text-align: center;
   padding-top: 35px;
   width: 100%;
-  height: 770px;
+  height: 100%;
 
 	h1 {
 		font-family: 'Junction', Verdana;
@@ -24,7 +25,7 @@
     font-weight: 400;
     margin-top: 20px;
     margin-bottom: 25px;
-    color: #eee;
+    color: #EEE;
     padding-top: 30px;
     text-shadow: -2px -2px 0 #000;
 	}
@@ -39,42 +40,22 @@
 		text-decoration: underline;
 	}
 
-  time {
-    display: block;
-  }
-
-	.henry-img {
-    margin-top: 20px;
-		width: 215px; /* 250px*/
-    margin-bottom: 20px;
-    opacity: 0.6;
-	}
-
-  .clock {
-    height: 0;
-  }
-
-  .empty {
-    height: 200px;
-    width: 200px;
-    display: block;
-    margin: -250px auto 0 auto;
-    position: relative;
-    z-index: 9999;
-    cursor: pointer;
-  }
 
   .para {
     margin: 15px auto 15px auto;
     width: 80%;
   }
 
+
 	.social-icons {
 		overflow: hidden;
-		width: 300px;
-		margin: 10px auto 20px auto;
+		margin: 10px auto 25px auto;
 		padding: 0;
+		width:280px;
+		@include chosenDevice(mobile) {
+    }
 	}
+
 
 	.social-icons li {
 		float: left;
@@ -82,179 +63,31 @@
 		padding: 0;
 	}
 
-  .email {
-    margin-top: 20px;
-  	padding: 10px 45px;
-  }
-
-	.email:hover {
-    text-decoration: none;
-	}
-
-  .popover {
-    text-align: center;
-  }
-
-  .popover-content {
-    font-size: 0.9em;
-  }
 }
 
-/************************
- Social Icons CSS
-************************/
-
-
-
-
-
-
-
-/** **/
-// TODO: refactor responsive css
-//Applies these styles if width of viewport is 1024 or less
-// @media screen and (max-width: 1024px) { 
-//   ul, li {
-//     background: green;
-//   }
-//   ul .post-date {
-//     color: black;
-//   }
-
-// }
-
-// @media screen and (max-width: 700px) {
-//   ul, li {
-//     background: red;
-//   }
-// }
-
-// @media (min-width: 768px) and (max-width: 979px) {
-//   ul, li {
-//     background: purple;
-//   }
-// }
 
 
 /* Large desktop */
 @media (min-width: 1200px) { 
-  .home {
-    max-width: 1300px;
-  }
 
-  .logo {
-    left: 40px;
-  }
 }
  
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
-  .home {
-    width: 85%;
-  }
 
-  .posts h2 {
-    font-size:1.3em;
-    line-height: 30px;
-  }
-
-  .posts p{
-    line-height: 25px;
-    font-size: 1em;
-  }
 }
  
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-  .henry-img {
-    // width:10px !important;
-  }
 
-  .posts h2 {
-    font-size: 1.2em;
-    line-height: 25px;
-  }
-
-  .posts p {
-    font-size: 0.95em;
-    line-height: 25px;
-  }
-
-  .home {
-    width: 90%;
-  }
 }
 
-@media (max-width: 660px) { // custom
-
-  .home {
-    width: 92%;
-  }
-
+@media (max-width: 660px) {
   .hero {
-    height: 725px;
     font-size: 1em;
-  }
-
-  .post-img {
-    display: none;
-  }
-
-  .posts h2 {
-    text-align: center;
-    width: 80%;
-    margin: 10px auto 0 auto;
-  }
-
-  .post-date {
-    margin-top: 7px;
-    text-align: center;
-  }
-
-  .posts p {
-    text-align:center;
   }
 }
  
-/* Landscape phones and down */
-@media (max-width: 480px) {
-  // HERO
-  .hero {
-    height: 690px;
-    padding-top: 30px;
-
-    .para {
-      width: 90%;
-    }
-    .henry-img {
-      margin-top: 10px;
-    }
-    time {
-      font-size: 0.9em;
-    }
-  }
-
-  .post-date {
-    text-align: center;
-  }
-
-  // POSTS
-  .posts {
-    .post {
-      h2 {
-        font-size: 1em;
-        line-height: 25px;
-        margin-bottom: 0;
-      }
-      p {
-        margin: 0 0 15px 0;
-      }
-
-    }
-  }
-
-}
-
 
 
 

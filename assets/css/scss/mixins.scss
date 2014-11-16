@@ -1,0 +1,15 @@
+/* Responsive General Sass Mixing function */
+@mixin chosenDevice($device) {
+  @if $device == mobile {
+    @media (max-width: 480px) {
+      @content;
+    }
+  }
+}
+
+@mixin mugshotStyles {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
