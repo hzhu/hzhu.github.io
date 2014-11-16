@@ -72,7 +72,11 @@
               .transition()
               .duration(300)
               .style("opacity", 0.7);
+          });
 
+          $('.team .member').on("click", function(){
+            $(this).removeClass();
+            $(this).addClass("member photo" + Math.floor(Math.random() * 4 + 1));
           });
         }
       });
