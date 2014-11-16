@@ -33,13 +33,17 @@
 	a {
 		color: #faf2c1;
 		font-size: 25px;
-		text-decoration: none;
+    span {
+      text-indent: -999em;
+      display: block;
+    }
 	}
 
 	a:hover {
 		text-decoration: underline;
 	}
 
+  
 
   .para {
     margin: 15px auto 15px auto;
@@ -51,9 +55,11 @@
 		overflow: hidden;
 		margin: 10px auto 25px auto;
 		padding: 0;
-		width:280px;
+		width:298px;
 		@include chosenDevice(mobile) {
     }
+
+
 	}
 
 

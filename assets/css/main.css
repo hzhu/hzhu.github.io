@@ -170,25 +170,29 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .hero a {
   color: #faf2c1;
   font-size: 25px;
-  text-decoration: none;
 }
-/* line 39, scss/main.scss */
+/* line 36, scss/main.scss */
+.hero a span {
+  text-indent: -999em;
+  display: block;
+}
+/* line 42, scss/main.scss */
 .hero a:hover {
   text-decoration: underline;
 }
-/* line 44, scss/main.scss */
+/* line 48, scss/main.scss */
 .hero .para {
   margin: 15px auto 15px auto;
   width: 80%;
 }
-/* line 50, scss/main.scss */
+/* line 54, scss/main.scss */
 .hero .social-icons {
   overflow: hidden;
   margin: 10px auto 25px auto;
   padding: 0;
-  width: 280px;
+  width: 298px;
 }
-/* line 60, scss/main.scss */
+/* line 66, scss/main.scss */
 .hero .social-icons li {
   float: left;
   margin-left: 25px;
@@ -199,23 +203,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* Portrait tablet to landscape and desktop */
 /* Landscape phone to portrait tablet */
 @media (max-width: 660px) {
-  /* line 86, scss/main.scss */
+  /* line 92, scss/main.scss */
   .hero {
     font-size: 1em;
   }
 }
 /* scaffolding */
-/* line 121, scss/main.scss */
+/* line 127, scss/main.scss */
 .wrapper {
   width: 100%;
 }
 
-/* line 125, scss/main.scss */
+/* line 131, scss/main.scss */
 html, body {
   height: 100%;
 }
 
-/* line 129, scss/main.scss */
+/* line 135, scss/main.scss */
 body {
   background-color: #FFF;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
@@ -223,33 +227,33 @@ body {
   color: #333;
 }
 
-/* line 137, scss/main.scss */
+/* line 143, scss/main.scss */
 li {
   list-style: none;
 }
 
-/* line 141, scss/main.scss */
+/* line 147, scss/main.scss */
 .mauto {
   margin: 0 auto;
   display: block;
 }
 
-/* line 146, scss/main.scss */
+/* line 152, scss/main.scss */
 .pull-left {
   float: left;
 }
 
-/* line 150, scss/main.scss */
+/* line 156, scss/main.scss */
 .clearfix {
   overflow: hidden;
 }
 
-/* line 154, scss/main.scss */
+/* line 160, scss/main.scss */
 .text-center {
   text-align: left;
 }
 
-/* line 158, scss/main.scss */
+/* line 164, scss/main.scss */
 .mleft0 {
   margin-left: 0 !important;
 }
