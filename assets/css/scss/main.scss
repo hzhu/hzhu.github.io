@@ -7,10 +7,6 @@
 @import "mugshot";
 @import "mixins";
 
-/************************
- HERO CSS
-************************/
-
 .hero {
   background: url(../images/linen.png);
   color: #FFF;
@@ -43,32 +39,23 @@
 		text-decoration: underline;
 	}
 
-  
-
   .para {
     margin: 15px auto 15px auto;
     width: 80%;
   }
-
 
 	.social-icons {
 		overflow: hidden;
 		margin: 10px auto 25px auto;
 		padding: 0;
 		width:298px;
-		@include chosenDevice(mobile) {
-    }
-
-
 	}
-
 
 	.social-icons li {
 		float: left;
 		margin-left: 25px;
 		padding: 0;
 	}
-
 }
 
 

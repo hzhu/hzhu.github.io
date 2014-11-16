@@ -96,40 +96,37 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 21, scss/_mugshot.scss */
 .team .photo1 {
   background: url("https://lh3.googleusercontent.com/-Y7BSUSAjY00/Tv6-sh1hnHI/AAAAAAAAARY/6FMQAd2-aWg/w469-h368-no/IMG_0786.JPG");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
-/* line 27, scss/_mugshot.scss */
+/* line 25, scss/_mugshot.scss */
 .team .photo2 {
   background: url("../../assets/images/pups-hq.png");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
-/* line 32, scss/_mugshot.scss */
+/* line 29, scss/_mugshot.scss */
 .team .photo3 {
   background: url("../../assets/images/bleep-hq.png");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
-/* line 38, scss/_mugshot.scss */
+/* line 33, scss/_mugshot.scss */
 .team .photo4 {
   background: url("../../assets/images/glass-hq.png");
+}
+
+/* line 37, scss/_mugshot.scss */
+.team .photo1,
+.team .photo2,
+.team .photo3,
+.team .photo4 {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  cursor: pointer;
+  opacity: 0.6;
 }
 
-/* line 43, scss/_mugshot.scss */
+/* line 44, scss/_mugshot.scss */
 .team .member {
   width: 100%;
   max-width: 230px;
@@ -143,10 +140,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, 0.1);
 }
 
-/************************
- HERO CSS
-************************/
-/* line 14, scss/main.scss */
+/* line 10, scss/main.scss */
 .hero {
   background: url(../images/linen.png);
   color: #FFF;
@@ -155,7 +149,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 100%;
   height: 100%;
 }
-/* line 22, scss/main.scss */
+/* line 18, scss/main.scss */
 .hero h1 {
   font-family: 'Junction', Verdana;
   font-size: 5.9em;
@@ -166,33 +160,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding-top: 30px;
   text-shadow: -2px -2px 0 #000;
 }
-/* line 33, scss/main.scss */
+/* line 29, scss/main.scss */
 .hero a {
   color: #faf2c1;
   font-size: 25px;
 }
-/* line 36, scss/main.scss */
+/* line 32, scss/main.scss */
 .hero a span {
   text-indent: -999em;
   display: block;
 }
-/* line 42, scss/main.scss */
+/* line 38, scss/main.scss */
 .hero a:hover {
   text-decoration: underline;
 }
-/* line 48, scss/main.scss */
+/* line 42, scss/main.scss */
 .hero .para {
   margin: 15px auto 15px auto;
   width: 80%;
 }
-/* line 54, scss/main.scss */
+/* line 47, scss/main.scss */
 .hero .social-icons {
   overflow: hidden;
   margin: 10px auto 25px auto;
   padding: 0;
   width: 298px;
 }
-/* line 66, scss/main.scss */
+/* line 54, scss/main.scss */
 .hero .social-icons li {
   float: left;
   margin-left: 25px;
@@ -203,23 +197,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* Portrait tablet to landscape and desktop */
 /* Landscape phone to portrait tablet */
 @media (max-width: 660px) {
-  /* line 92, scss/main.scss */
+  /* line 79, scss/main.scss */
   .hero {
     font-size: 1em;
   }
 }
 /* scaffolding */
-/* line 127, scss/main.scss */
+/* line 114, scss/main.scss */
 .wrapper {
   width: 100%;
 }
 
-/* line 131, scss/main.scss */
+/* line 118, scss/main.scss */
 html, body {
   height: 100%;
 }
 
-/* line 135, scss/main.scss */
+/* line 122, scss/main.scss */
 body {
   background-color: #FFF;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
@@ -227,33 +221,33 @@ body {
   color: #333;
 }
 
-/* line 143, scss/main.scss */
+/* line 130, scss/main.scss */
 li {
   list-style: none;
 }
 
-/* line 147, scss/main.scss */
+/* line 134, scss/main.scss */
 .mauto {
   margin: 0 auto;
   display: block;
 }
 
-/* line 152, scss/main.scss */
+/* line 139, scss/main.scss */
 .pull-left {
   float: left;
 }
 
-/* line 156, scss/main.scss */
+/* line 143, scss/main.scss */
 .clearfix {
   overflow: hidden;
 }
 
-/* line 160, scss/main.scss */
+/* line 147, scss/main.scss */
 .text-center {
   text-align: left;
 }
 
-/* line 164, scss/main.scss */
+/* line 151, scss/main.scss */
 .mleft0 {
   margin-left: 0 !important;
 }
