@@ -33,6 +33,7 @@ $(document).ready(function(){
 
   // Change pic on click to random pic
   $('.box .member').on("click", function() {
+    mixpanel.track("Mugshot clicked");
     $(this).removeClass();
     $(this).addClass("member " + shuffleArray(photos));
   });
