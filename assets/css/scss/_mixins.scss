@@ -14,7 +14,7 @@
   background-size: cover;
   cursor: pointer;
   opacity: 0.5;
-  @include chosenDevice(mobile) {
-    opacity: 1;
-  }
+  // @include chosenDevice(mobile) {
+  //   opacity: 1;
+  // }
 }

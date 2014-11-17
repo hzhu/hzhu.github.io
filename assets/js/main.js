@@ -5,19 +5,36 @@ var isMobile;
   isMobile = (index > -1);
 })();
 
+function shuffleArray(array) {
+  for (var i = array.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var temp = array[i];
+    array[i] = array[j];
+    array[j] = temp;
+  }
+  return array[0];
+}
+
+
+setTimeout(function(){
+  $(".box .member").css("-webkit-transition", "all .5s ease-in");
+}, 1000);
+
+// For Dom Ready Stuffs
 $(document).ready(function(){
 	// FitText.js
   jQuery(".hero h1").fitText(1.5, {minFontSize: '45px', maxFontSize: '195px'});
 
-  var photos = ["photo1", "photo2", "photo3", "photo4", "photo5"];
-  var randomNumber = Math.floor(Math.random() * 4 + 1);
+  var photos = ["photo1", "photo2", "photo3", "photo4"];
+  var randomPicture = shuffleArray(photos);
 
   // Load page with random pic
-  $(".member").addClass("photo" + randomNumber);
+  $(".member").addClass(randomPicture);
+
   // Change pic on click to random pic
   $('.box .member').on("click", function() {
     $(this).removeClass();
-    $(this).addClass("member photo" + Math.floor(Math.random() * 4 + 1));
+    $(this).addClass("member " + shuffleArray(photos));
   });
 
 
@@ -51,29 +68,4 @@ $(document).ready(function(){
         .style("opacity", 0.7);
     });
   }
-
-
-
-
-setTimeout(function(){
-  $(".box .member").css("-webkit-transition", "all .5s ease-in");
-}, 1000);
-
-
-
-
-
-// $(".box .member").on('click', function() {
-
-//   $(".box .member").animate({
-//     opacity: 0.3
-//   }, 300);
-
-// });
-
-
-
-
-
-
 });
