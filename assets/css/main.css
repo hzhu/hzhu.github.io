@@ -151,14 +151,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 10, scss/main.scss */
 .hero {
-  background: url(../images/linen.png);
   color: #FFF;
   text-align: center;
   padding-top: 35px;
   width: 100%;
   height: 100%;
 }
-/* line 18, scss/main.scss */
+/* line 17, scss/main.scss */
 .hero h1 {
   font-family: 'Open Sans', 'Junction', Verdana;
   font-size: 5em;
@@ -168,32 +167,32 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding-top: 10px;
   text-shadow: -2px -2px 0 #000;
 }
-/* line 28, scss/main.scss */
+/* line 27, scss/main.scss */
 .hero a {
   color: #faf2c1;
   font-size: 25px;
 }
-/* line 31, scss/main.scss */
+/* line 30, scss/main.scss */
 .hero a span {
   text-indent: -999em;
   display: block;
 }
-/* line 37, scss/main.scss */
+/* line 36, scss/main.scss */
 .hero a:hover {
   text-decoration: underline;
 }
-/* line 41, scss/main.scss */
+/* line 40, scss/main.scss */
 .hero span {
   color: #faf2c1;
 }
-/* line 45, scss/main.scss */
+/* line 44, scss/main.scss */
 .hero .social-icons {
   overflow: hidden;
   margin: 10px auto 0px auto;
   padding: 0;
   width: 277px;
 }
-/* line 52, scss/main.scss */
+/* line 51, scss/main.scss */
 .hero .social-icons li {
   float: left;
   margin-left: 25px;
@@ -204,46 +203,48 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* Portrait tablet to landscape and desktop */
 /* Landscape phone to portrait tablet */
 @media (max-width: 660px) {
-  /* line 77, scss/main.scss */
+  /* line 76, scss/main.scss */
   .hero {
     font-size: 1em;
   }
 }
-/* line 112, scss/main.scss */
+/* scaffolding */
+/* line 118, scss/main.scss */
 body {
   background-color: #FFF;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: 1.25em;
   color: #333;
+  background: url(../images/linen.png);
 }
 
-/* line 120, scss/main.scss */
+/* line 129, scss/main.scss */
 li {
   list-style: none;
 }
 
-/* line 124, scss/main.scss */
+/* line 133, scss/main.scss */
 .mauto {
   margin: 0 auto;
   display: block;
 }
 
-/* line 129, scss/main.scss */
+/* line 138, scss/main.scss */
 .pull-left {
   float: left;
 }
 
-/* line 133, scss/main.scss */
+/* line 142, scss/main.scss */
 .clearfix {
   overflow: hidden;
 }
 
-/* line 137, scss/main.scss */
+/* line 146, scss/main.scss */
 .text-center {
   text-align: left;
 }
 
-/* line 141, scss/main.scss */
+/* line 150, scss/main.scss */
 .mleft0 {
   margin-left: 0 !important;
 }
