@@ -35,6 +35,28 @@
     }
 	}
 
+  .content-box {
+    padding-top: 100px;
+  }
+  .box-container {
+    overflow: hidden;
+    width: 335px;
+    margin: 0 auto;
+    @include chosenDevice(mobile) {
+      width: 280px;
+    }
+  }
+  .letter-h {
+    font-size: 120px;
+    color: #faf2c1;
+    font-weight: 100;
+    line-height: 255px;
+    @include chosenDevice(mobile) {
+      font-size: 100px;
+      line-height: 235px;
+    }
+  }
+
 	a:hover {
 		text-decoration: underline;
 	}
@@ -46,7 +68,7 @@
 
 	.social-icons {
 		overflow: hidden;
-		margin: 10px auto 25px auto;
+		margin: 10px auto 0px auto;
 		padding: 0;
 		width: 277px;
 	}
