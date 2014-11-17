@@ -22,6 +22,7 @@ setTimeout(function(){
 
 // For Dom Ready Stuffs
 $(document).ready(function(){
+  mixpanel.track("Page Loaded");
 	// FitText.js
   jQuery(".hero h1").fitText(1.5, {minFontSize: '45px', maxFontSize: '195px'});
 
