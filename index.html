@@ -15,83 +15,17 @@
     <link href="http://24.media.tumblr.com/avatar_484a3eb28774_128.png" rel="shortcut icon" type="image/vnd.microsoft.icon">
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script type="text/javascript">
-      // Check if device is mobile
-      var isMobile;
-      (function(){
-        var index = navigator.appVersion.indexOf("Mobile");
-        isMobile = (index > -1);
-      })();
-    </script>
-
     <script src="assets/js/fittext.js" type="text/javascript"></script>
-    <script src="assets/js/scroll.js" type="text/javascript"></script>
     <script src="http://d3js.org/d3.v3.min.js" type="text/javascript"></script>
-
-
-    
-    <script>
-      $(document).ready(function(){
-        jQuery(".hero h1").fitText(1.5, {minFontSize: '45px', maxFontSize: '195px'});
-
-
-
-  
-
-        var photos = ["photo1", "photo2", "photo3", "photo4", "photo5"];
-
-        randomNumber = Math.floor(Math.random() * 4 + 1);
-
-        $(".member").addClass("photo" + randomNumber);
-
-
-
-        if (!isMobile) {
-          d3.select('.box .member')
-              .transition()
-              .duration(1000)
-              .style("opacity", 1);
-
-
-          $('.box .member').hover(function() {
-            d3.select('.box .member')
-              .transition()
-              .duration(300)
-              .style("opacity", 1);
-
-            d3.select('.img-container')
-              .transition()
-              .duration(300)
-              .style("opacity", 1);
-          }, function() {
-            d3.select('.henry-img')
-              .transition()
-              .duration(3500)
-              .style("opacity", 0.5);
-          });
-
-          $('.box .member').mouseout(function() {
-              d3.select('.box .member')
-              .transition()
-              .duration(300)
-              .style("opacity", 0.7);
-          });
-
-          $('.box .member').on("click", function(){
-            $(this).removeClass();
-            $(this).addClass("member photo" + Math.floor(Math.random() * 4 + 1));
-          });
-        }
-      });
-    </script>
+    <script src="assets/js/main.js" type="text/javascript"></script>
   </head>
 
   <div class="hero">
     <!-- mugshot -->
     <div class="content-box">
-    <div class="box">
-      <div class="member"></div>
-    </div>
+      <div class="box">
+        <div class="member"></div>
+      </div>
     </div>
 
     <h1>Hello! I'm Henry.</h1>
