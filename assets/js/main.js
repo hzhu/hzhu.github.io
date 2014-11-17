@@ -51,4 +51,29 @@ $(document).ready(function(){
         .style("opacity", 0.7);
     });
   }
+
+
+
+
+setTimeout(function(){
+  $(".box .member").css("-webkit-transition", "all .5s ease-in");
+}, 1000);
+
+
+
+
+
+// $(".box .member").on('click', function() {
+
+//   $(".box .member").animate({
+//     opacity: 0.3
+//   }, 300);
+
+// });
+
+
+
+
+
+
 });
