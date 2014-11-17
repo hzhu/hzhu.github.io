@@ -49,14 +49,14 @@
 
 
         if (!isMobile) {
-            d3.select('.team .member')
+            d3.select('.box .member')
               .transition()
-              .duration(500)
+              .duration(1000)
               .style("opacity", 1);
 
 
-          $('.team .member').hover(function() {
-            d3.select('.team .member')
+          $('.box .member').hover(function() {
+            d3.select('.box .member')
               .transition()
               .duration(300)
               .style("opacity", 1);
@@ -72,15 +72,15 @@
               .style("opacity", 0.5);
           });
 
-          $('.team .member').mouseout(function() {
+          $('.box .member').mouseout(function() {
               console.log('hello');
-              d3.select('.team .member')
+              d3.select('.box .member')
               .transition()
               .duration(300)
               .style("opacity", 0.7);
           });
 
-          $('.team .member').on("click", function(){
+          $('.box .member').on("click", function(){
             $(this).removeClass();
             $(this).addClass("member photo" + Math.floor(Math.random() * 4 + 1));
           });
@@ -92,13 +92,20 @@
   <div class="hero">
     <!-- mugshot -->
     <div class="content-box">
-    <div class="team">
-      <div class="member"></div>
+    <div class="box-container" style="overflow: hidden;width: 335px;margin: 0 auto;">
+      
+      <div class="box" style="float:left;margin: 10px 7px 10px 7px;">
+        <div class="member"></div>
+      </div>
+      <span style="font-size: 120px;
+color: #faf2c1;
+font-weight: 100;
+line-height: 255px">H</span>
+      
     </div>
     </div>
 
     <a class="empty"></a>
-    <h1>Hello! I'm Henry.</h1>
     <ul class="social-icons">
       <li class="mleft0">
         <a href="http://twitter.com/henballs" class="genericon genericon-twitter" title="Twitter">

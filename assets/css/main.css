@@ -69,7 +69,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* Responsive General Sass Mixing function */
 /* line 3, scss/_mugshot.scss */
-.team {
+.box {
   margin: 60px auto 25px;
   /* positioning */
   background: transparent;
@@ -87,37 +87,37 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 @media (max-width: 480px) {
   /* line 3, scss/_mugshot.scss */
-  .team {
+  .box {
     width: 190px;
     height: 190px;
   }
 }
 
 /* line 21, scss/_mugshot.scss */
-.team .photo1 {
+.box .photo1 {
   background: url("https://lh3.googleusercontent.com/-Y7BSUSAjY00/Tv6-sh1hnHI/AAAAAAAAARY/6FMQAd2-aWg/w469-h368-no/IMG_0786.JPG");
 }
 
 /* line 25, scss/_mugshot.scss */
-.team .photo2 {
+.box .photo2 {
   background: url("../../assets/images/pups-hq.png");
 }
 
 /* line 29, scss/_mugshot.scss */
-.team .photo3 {
+.box .photo3 {
   background: url("../../assets/images/bleep-hq.png");
 }
 
 /* line 33, scss/_mugshot.scss */
-.team .photo4 {
+.box .photo4 {
   background: url("../../assets/images/glass-hq.png");
 }
 
 /* line 37, scss/_mugshot.scss */
-.team .photo1,
-.team .photo2,
-.team .photo3,
-.team .photo4 {
+.box .photo1,
+.box .photo2,
+.box .photo3,
+.box .photo4 {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -127,7 +127,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 44, scss/_mugshot.scss */
-.team .member {
+.box .member {
   width: 100%;
   max-width: 230px;
   /* width of the interior image */
