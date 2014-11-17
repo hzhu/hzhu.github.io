@@ -15,7 +15,7 @@ $(document).ready(function(){
   // Load page with random pic
   $(".member").addClass("photo" + randomNumber);
   // Change pic on click to random pic
-  $('.box .member').on("click", function(){
+  $('.box .member').on("click", function() {
     $(this).removeClass();
     $(this).addClass("member photo" + Math.floor(Math.random() * 4 + 1));
   });
