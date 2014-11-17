@@ -16,13 +16,12 @@
   height: 100%;
 
 	h1 {
-		font-family: 'Junction', Verdana;
-    font-size: 5.9em;
-    font-weight: 400;
-    margin-top: 20px;
+		font-family: 'Open Sans', 'Junction', Verdana;
+    font-size: 5em;
+    font-weight: 300;
     margin-bottom: 25px;
-    color: #EEE;
-    padding-top: 30px;
+    color: #faf2c1;
+    padding-top: 10px;
     text-shadow: -2px -2px 0 #000;
 	}
   
@@ -39,14 +38,13 @@
 		text-decoration: underline;
 	}
 
-  .para {
-    margin: 15px auto 15px auto;
-    width: 80%;
+  span {
+        color: #faf2c1;
   }
 
 	.social-icons {
 		overflow: hidden;
-		margin: 10px auto 25px auto;
+		margin: 10px auto 0px auto;
 		padding: 0;
     width: 277px;
 	}

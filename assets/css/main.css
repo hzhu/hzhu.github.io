@@ -151,42 +151,40 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 18, scss/main.scss */
 .hero h1 {
-  font-family: 'Junction', Verdana;
-  font-size: 5.9em;
-  font-weight: 400;
-  margin-top: 20px;
+  font-family: 'Open Sans', 'Junction', Verdana;
+  font-size: 5em;
+  font-weight: 300;
   margin-bottom: 25px;
-  color: #EEE;
-  padding-top: 30px;
+  color: #faf2c1;
+  padding-top: 10px;
   text-shadow: -2px -2px 0 #000;
 }
-/* line 29, scss/main.scss */
+/* line 28, scss/main.scss */
 .hero a {
   color: #faf2c1;
   font-size: 25px;
 }
-/* line 32, scss/main.scss */
+/* line 31, scss/main.scss */
 .hero a span {
   text-indent: -999em;
   display: block;
 }
-/* line 38, scss/main.scss */
+/* line 37, scss/main.scss */
 .hero a:hover {
   text-decoration: underline;
 }
-/* line 42, scss/main.scss */
-.hero .para {
-  margin: 15px auto 15px auto;
-  width: 80%;
+/* line 41, scss/main.scss */
+.hero span {
+  color: #faf2c1;
 }
-/* line 47, scss/main.scss */
+/* line 45, scss/main.scss */
 .hero .social-icons {
   overflow: hidden;
-  margin: 10px auto 25px auto;
+  margin: 10px auto 0px auto;
   padding: 0;
-  width: 298px;
+  width: 277px;
 }
-/* line 54, scss/main.scss */
+/* line 52, scss/main.scss */
 .hero .social-icons li {
   float: left;
   margin-left: 25px;
@@ -197,23 +195,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* Portrait tablet to landscape and desktop */
 /* Landscape phone to portrait tablet */
 @media (max-width: 660px) {
-  /* line 79, scss/main.scss */
+  /* line 77, scss/main.scss */
   .hero {
     font-size: 1em;
   }
 }
 /* scaffolding */
-/* line 114, scss/main.scss */
+/* line 112, scss/main.scss */
 .wrapper {
   width: 100%;
 }
 
-/* line 118, scss/main.scss */
+/* line 116, scss/main.scss */
 html, body {
   height: 100%;
 }
 
-/* line 122, scss/main.scss */
+/* line 120, scss/main.scss */
 body {
   background-color: #FFF;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
@@ -221,33 +219,33 @@ body {
   color: #333;
 }
 
-/* line 130, scss/main.scss */
+/* line 128, scss/main.scss */
 li {
   list-style: none;
 }
 
-/* line 134, scss/main.scss */
+/* line 132, scss/main.scss */
 .mauto {
   margin: 0 auto;
   display: block;
 }
 
-/* line 139, scss/main.scss */
+/* line 137, scss/main.scss */
 .pull-left {
   float: left;
 }
 
-/* line 143, scss/main.scss */
+/* line 141, scss/main.scss */
 .clearfix {
   overflow: hidden;
 }
 
-/* line 147, scss/main.scss */
+/* line 145, scss/main.scss */
 .text-center {
   text-align: left;
 }
 
-/* line 151, scss/main.scss */
+/* line 149, scss/main.scss */
 .mleft0 {
   margin-left: 0 !important;
 }
