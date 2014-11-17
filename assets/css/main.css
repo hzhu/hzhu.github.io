@@ -209,18 +209,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     font-size: 1em;
   }
 }
-/* scaffolding */
 /* line 112, scss/main.scss */
-.wrapper {
-  width: 100%;
-}
-
-/* line 116, scss/main.scss */
-html, body {
-  height: 100%;
-}
-
-/* line 120, scss/main.scss */
 body {
   background-color: #FFF;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
@@ -228,33 +217,33 @@ body {
   color: #333;
 }
 
-/* line 128, scss/main.scss */
+/* line 120, scss/main.scss */
 li {
   list-style: none;
 }
 
-/* line 132, scss/main.scss */
+/* line 124, scss/main.scss */
 .mauto {
   margin: 0 auto;
   display: block;
 }
 
-/* line 137, scss/main.scss */
+/* line 129, scss/main.scss */
 .pull-left {
   float: left;
 }
 
-/* line 141, scss/main.scss */
+/* line 133, scss/main.scss */
 .clearfix {
   overflow: hidden;
 }
 
-/* line 145, scss/main.scss */
+/* line 137, scss/main.scss */
 .text-center {
   text-align: left;
 }
 
-/* line 149, scss/main.scss */
+/* line 141, scss/main.scss */
 .mleft0 {
   margin-left: 0 !important;
 }
