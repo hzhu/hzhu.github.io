@@ -125,6 +125,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   cursor: pointer;
   opacity: 0.1;
 }
+@media (max-width: 480px) {
+  /* line 37, scss/_mugshot.scss */
+  .box .photo1,
+  .box .photo2,
+  .box .photo3,
+  .box .photo4 {
+    opacity: 1;
+  }
+}
 
 /* line 44, scss/_mugshot.scss */
 .box .member {
