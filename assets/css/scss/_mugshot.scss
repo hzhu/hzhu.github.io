@@ -1,6 +1,6 @@
 @import "mixins";
 
-.team {
+.box {
 margin: 60px auto 25px; /* positioning */
 background: transparent;
 display: block;
@@ -18,30 +18,30 @@ padding: 0;
 box-shadow: 0 0 0 5px #faf2c1, 0 -4px 5px 4px rgba(0, 0, 0, 0.25), 0 1px 2px 0 rgba(0, 0, 0, 0.16);
 }
 
-.team .photo1 {
+.box .photo1 {
 	background: url('https://lh3.googleusercontent.com/-Y7BSUSAjY00/Tv6-sh1hnHI/AAAAAAAAARY/6FMQAd2-aWg/w469-h368-no/IMG_0786.JPG');
 }
 
-.team .photo2 {
+.box .photo2 {
 	background: url('../../assets/images/pups-hq.png');
 }
 
-.team .photo3 {
+.box .photo3 {
 	background: url('../../assets/images/bleep-hq.png');
 }
 
-.team .photo4 {
+.box .photo4 {
 	background: url('../../assets/images/glass-hq.png');
 }
 
-.team .photo1,
-.team .photo2,
-.team .photo3,
-.team .photo4 {
+.box .photo1,
+.box .photo2,
+.box .photo3,
+.box .photo4 {
   @include mugshotStyles;
 }
 
-.team .member {
+.box .member {
 width: 100%;
 max-width: 230px; /* width of the interior image */
 height: 100%; 

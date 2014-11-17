@@ -49,14 +49,14 @@
 
 
         if (!isMobile) {
-            d3.select('.team .member')
+          d3.select('.box .member')
               .transition()
-              .duration(500)
+              .duration(1000)
               .style("opacity", 1);
 
 
-          $('.team .member').hover(function() {
-            d3.select('.team .member')
+          $('.box .member').hover(function() {
+            d3.select('.box .member')
               .transition()
               .duration(300)
               .style("opacity", 1);
@@ -72,15 +72,14 @@
               .style("opacity", 0.5);
           });
 
-          $('.team .member').mouseout(function() {
-              console.log('hello');
-              d3.select('.team .member')
+          $('.box .member').mouseout(function() {
+              d3.select('.box .member')
               .transition()
               .duration(300)
               .style("opacity", 0.7);
           });
 
-          $('.team .member').on("click", function(){
+          $('.box .member').on("click", function(){
             $(this).removeClass();
             $(this).addClass("member photo" + Math.floor(Math.random() * 4 + 1));
           });
@@ -92,7 +91,7 @@
   <div class="hero">
     <!-- mugshot -->
     <div class="content-box">
-    <div class="team">
+    <div class="box">
       <div class="member"></div>
     </div>
     </div>
