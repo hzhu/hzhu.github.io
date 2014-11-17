@@ -193,15 +193,16 @@ body {
 /* line 49, scss/main.scss */
 .hero span {
   font-family: 'Open Sans';
+  font-size: 18px;
 }
-/* line 53, scss/main.scss */
+/* line 54, scss/main.scss */
 .hero .social-icons {
   overflow: hidden;
   margin: 10px auto 0px auto;
   padding: 0;
-  width: 301px;
+  width: 325px;
 }
-/* line 60, scss/main.scss */
+/* line 61, scss/main.scss */
 .hero .social-icons li {
   float: left;
   margin-left: 25px;
