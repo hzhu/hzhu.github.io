@@ -17,7 +17,7 @@ function shuffleArray(array) {
 
 
 setTimeout(function(){
-  $(".box .member").css("-webkit-transition", "all .5s ease-in");
+  $(".box .member").css("-webkit-transition", "all .3s ease");
 }, 1000);
 
 // For Dom Ready Stuffs
