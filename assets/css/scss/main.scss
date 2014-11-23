@@ -17,6 +17,9 @@ body {
   padding-top: 35px;
   width: 100%;
   height: 100%;
+  @include chosenDevice(largeDesktop) {
+    padding-top: 7%;
+  }
 
 
 	h1 {
