@@ -34,10 +34,15 @@ box-shadow: 0 0 0 5px #faf2c1, 0 -4px 5px 4px rgba(0, 0, 0, 0.25), 0 1px 2px 0 r
 	background: url('../../assets/images/glass-hq.png');
 }
 
+.box .photo5 {
+	background: url('../../assets/images/eyes-hq.png');	
+}
+
 .box .photo1,
 .box .photo2,
 .box .photo3,
-.box .photo4 {
+.box .photo4,
+.box .photo5 {
   @include mugshotStyles;
 }
 
