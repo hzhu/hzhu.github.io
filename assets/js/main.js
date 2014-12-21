@@ -38,6 +38,17 @@ $(document).ready(function(){
     $(this).removeClass();
     $(this).addClass("member " + shuffleArray(photos));
   });
+  /*Crazy Script Stuff - Don't ever do this ;)*/
+  /*
+  function makePhotoCall (n) {
+    $(".member").removeClass()
+    $(".box div").addClass("member photo" + n)
+  }
+
+  for (var i = 1; i < 6; i++) {
+    console.log(i);
+    makePhotoCall(i);
+  }*/
 
   d3.select('.box .member')
     .transition()
