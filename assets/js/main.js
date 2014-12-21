@@ -39,16 +39,13 @@ $(document).ready(function(){
     $(this).addClass("member " + shuffleArray(photos));
   });
   /*Crazy Script Stuff - Don't ever do this ;)*/
-  /*
-  function makePhotoCall (n) {
-    $(".member").removeClass()
-    $(".box div").addClass("member photo" + n)
-  }
+  var intervalID = setInterval(function() {
+      $(".member").click();
+  }, 100);
 
-  for (var i = 1; i < 6; i++) {
-    console.log(i);
-    makePhotoCall(i);
-  }*/
+  setTimeout(function() {
+    clearInterval(intervalID);
+  }, 900);
 
   d3.select('.box .member')
     .transition()
