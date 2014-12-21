@@ -26,7 +26,7 @@ $(document).ready(function(){
 	// FitText.js
   jQuery(".hero h1").fitText(1.5, {minFontSize: '45px', maxFontSize: '195px'});
 
-  var photos = ["photo1", "photo2", "photo3", "photo4", "photo5"];
+  var photos = ["photo1", "photo2", "photo3", "photo4", "photo5", "photo5"];
   var randomPicture = shuffleArray(photos);
 
   // Load page with random pic
