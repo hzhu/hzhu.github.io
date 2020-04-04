@@ -1,3 +1,8 @@
+---
+title: 朱学进
+layout: default
+---
+
 <html>
 	<head>
 		<meta charset="UTF-8" />
@@ -5,26 +10,21 @@
 		<link rel="stylesheet" href="assets/css/normalize.css" />
     <link rel="stylesheet" href="assets/css/tachyons.css" />
     <style>
-      body {
-        background: #001f3f;
-      }
-
       .very-very-big {
-        font-size: 30em;
+        font-size: 18em;
       }
     </style>
 	</head>
 	<body class="bg-lightgray pt6-ns pt5-m pt4 ph3 ma0">
-    <div class="tc">
+    <div class="tc mt3 mt6-m mt6-l">
       <span role="img" aria-label="Sobbing emoji" class="very-very-big">😭</span>
-      <p id="text" class="light-blue f1 helvetica"></p>
+      <p class="light-blue f2 helvetica">Could not find <span id="path" class="f1 lightest-blue"></span></p>
       <a class="f1 link" href="/">        
-        <span role="img" aria-label="Back arrow emoji">⬅️</span>
+        <span role="img" aria-label="Home with Garden emoji">🏡</span>
       </a>
     </div>
   </body>
   <script>
-    const pathname = document.location.pathname
-    document.getElementById('text').innerText = `Did not find ${pathname}.`;
+    document.getElementById('path').innerText = document.location.pathname;
   </script>
 </html>

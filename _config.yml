@@ -23,7 +23,7 @@ email: hz@henryzhu,me
 description: >- # this means to ignore newlines until "baseurl:"
   The coolest home page ever.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://henryzhu.me" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: henballs
 github_username:  hzhu
 
