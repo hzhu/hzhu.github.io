@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/tachyons.css" />
+    <style>
+      body {
+        background: #001f3f;
+      }
+
+      .very-very-big {
+        font-size: 30em;
+      }
+    </style>
+	</head>
+	<body class="bg-lightgray pt6-ns pt5-m pt4 ph3 ma0">
+    <div class="tc">
+      <span role="img" aria-label="Sobbing emoji" class="very-very-big">😭</span>
+      <p id="text" class="light-blue f1 helvetica"></p>
+      <a class="f1 link" href="/">        
+        <span role="img" aria-label="Back arrow emoji">⬅️</span>
+      </a>
+    </div>
+  </body>
+  <script>
+    const pathname = document.location.pathname
+    document.getElementById('text').innerText = `Did not find ${pathname}.`;
+  </script>
+</html>
