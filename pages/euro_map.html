@@ -4,98 +4,122 @@ permalink: /map
 layout: default
 ---
 
-<div id="map" style="height: 100%;display:flex;justify-content:center;align-items:center;background: #000;"></div>
+<div
+  id="map"
+  style="
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+  "
+></div>
 
-<script src="http://d3js.org/d3.v3.min.js"></script>
-<script src="http://d3js.org/d3.geo.projection.v0.min.js"></script>
-<script src="http://d3js.org/topojson.v1.min.js"></script>
+<script src="assets/map/d3.v3.min.js"></script>
+<script src="assets/map/d3.geo.projection.v0.min.js"></script>
+<script src="assets/map/topojson.v1.min.js"></script>
+
 <script>
+  (function () {
+    var countryColors = {
+      "Czech Rep.": "mediumturquoise",
+      Hungary: "plum",
+      Austria: "darkgoldenrod",
+      Belgium: "darkgreen",
+      Netherlands: "darkviolet",
+      Germany: "royalblue",
+      Poland: "darkred",
+      Lithuania: "blue",
+      Latvia: "purple",
+      Estonia: "chocolate",
+      Denmark: "yellow",
+    };
 
-(function() {
-	var countryColors = {
-		'Czech Rep.': 'mediumturquoise',
-		'Hungary': 'plum',
-		'Austria': 'darkgoldenrod',
-		'Belgium': 'darkgreen',
-		'Netherlands': 'darkviolet',
-		'Germany': 'royalblue',
-		'Poland': 'darkred',
-		'Lithuania': 'blue',
-		'Latvia': 'purple',
-		'Estonia': 'chocolate',
-		'Denmark': 'yellow'
-	}
+    var center, countries, height, path, projection, scale, svg, width;
+    width = 800;
+    height = 600;
+    center = [15, 61];
+    scale = 1200;
+    projection = d3.geo
+      .mercator()
+      .scale(scale)
+      .translate([width / 2, 0])
+      .center(center);
+    path = d3.geo.path().projection(projection);
+    svg = d3
+      .select("#map")
+      .append("svg")
+      .attr("height", height)
+      .attr("width", width)
+      .style("border", "1px solid #555")
+      .style("border-radius", "2px")
+      .style("background-color", "white");
+    countries = svg.append("g");
+    d3.json("/assets/map/eu.json", function (data) {
+      countries
+        .selectAll(".country")
+        .data(topojson.feature(data, data.objects.europe).features)
+        .enter()
+        .append("path")
+        .attr("data-name", function (d) {
+          return d.properties.name;
+        })
+        .attr("class", "country")
+        .attr("d", path)
+        .style("fill", function (d) {
+          var color = countryColors[d.properties.name];
+          if (color) {
+            return color;
+          } else return "#444";
+        })
+        .style("stroke", "black")
+        .style("opacity", 0.5);
 
+      d3.json("/assets/map/cities.json", function (error, traveled) {
+        if (error) return console.error(error);
 
-  var center, countries, height, path, projection, scale, svg, width
-  width = 800
-  height = 600
-  center = [15, 61]
-  scale = 1200
-  projection = d3.geo.mercator().scale(scale).translate([width / 2, 0]).center(center)
-  path = d3.geo.path().projection(projection)
-  svg = d3.select("#map").append("svg").attr("height", height).attr("width", width)
-	.style("border", "1px solid #555")
-	.style("border-radius", "2px")
-	.style('background-color', "white")
-  countries = svg.append("g")
-  d3.json("/assets/map/eu.json", function(data) {
-    countries.selectAll('.country')
-    .data(topojson.feature(data, data.objects.europe).features)
-    .enter()
-    .append('path')
-    .attr('data-name', function (d) {
-    	return d.properties.name
-    })
-    .attr('class', 'country')
-    .attr('d', path)
-    .style('fill', function (d) {
-    	var color = countryColors[d.properties.name]
-    	if (color) {
-    		return color
-    	} else return "#444"
-    })
-    .style('stroke', 'black')
-    .style('opacity', 0.5)
+        svg
+          .selectAll(".flags")
+          .data(topojson.feature(traveled, traveled.objects.places).features)
+          .enter()
+          .append("image")
+          .attr("width", 18)
+          .attr("height", 11)
 
-   d3.json("/assets/map/cities.json", function(error, traveled) {
-		  if (error) return console.error(error)
+          .attr("transform", function (d) {
+            var pos = projection(d.geometry.coordinates);
+            pos[0] = pos[0] - 15;
+            pos[1] = pos[1] - 5;
+            return "translate(" + pos + ")";
+          })
+          .attr("xlink:href", function (d) {
+            var imagename = d.properties.country
+              .toLowerCase()
+              .replace(" ", "_");
+            return "/assets/map/flags/" + imagename + ".svg";
+          });
 
-      svg.selectAll('.flags')
-	    .data(topojson.feature(traveled, traveled.objects.places).features)
-	    .enter()
-	    .append('image')
-	      .attr('width', 18)
-	      .attr('height', 11)
+        svg
+          .selectAll(".place-label")
+          .data(topojson.feature(traveled, traveled.objects.places).features)
+          .enter()
+          .append("text")
+          .style("font-family", "Verdana")
+          .style("font-size", "12px")
+          .style("font-weight", "bold")
+          .attr("class", "place-label")
+          .attr("transform", function (d) {
+            return "translate(" + projection(d.geometry.coordinates) + ")";
+          })
+          .attr("dy", ".35em")
+          .attr("x", 5)
+          .text(function (d) {
+            return d.properties.name;
+          })
+          .style("fill", "black");
+      });
 
-	      .attr("transform", function(d) {
-	      	var pos = projection(d.geometry.coordinates)
-	      	pos[0] = pos[0] - 15
-	      	pos[1] = pos[1] - 5
-	      	return "translate(" + pos + ")"
-	      })
-	      .attr("xlink:href", function (d) {
-	      	var imagename = d.properties.country.toLowerCase().replace(" ", "_")
-	      	return "/assets/map/flags/" + imagename + ".svg"
-	      })
-
-	    svg.selectAll(".place-label")
-	    .data(topojson.feature(traveled, traveled.objects.places).features)
-	    .enter().append("text")
-	    .style("font-family", "Verdana")
-	    .style("font-size", "12px")
-	    .style("font-weight", "bold")
-	    .attr("class", "place-label")
-	    .attr("transform", function(d) { return "translate(" + projection(d.geometry.coordinates) + ")" })
-	    .attr("dy", ".35em")
-	    .attr("x", 5)
-	    .text(function(d) {
-	    	return d.properties.name
-	    })
-	    .style('fill', 'black')
-		})
-
-    return
-  })
-}).call(this)
+      return;
+    });
+  }.call(this));
 </script>
